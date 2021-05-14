@@ -2,6 +2,7 @@
   background-color: var(--color-red-1);
   border: none;
   color: var(--color-white);
+  cursor: pointer;
   display: inline-block;
   font-family: var(--font-family--default);
   font-size: 0.875rem;
@@ -9,10 +10,16 @@
   padding: 0.5rem 2.5rem;
   text-transform: uppercase;
 
-
   @media (--medium) {
     font-size: 1.25rem;
     padding: 1.25rem 2rem;
+  }
+
+  &--light {
+    background-color: #b8b8b8;
+    color: var(--color-white);
+    font-weight: normal;
+    letter-spacing: .9px;
   }
 
   &--transparent {

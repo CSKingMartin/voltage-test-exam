@@ -3,8 +3,10 @@ import Head from 'next/head'
 import Button from '../src/blocks/button';
 import Card from '../src/components/card';
 import FlexCta from '../src/components/flex-cta';
+import GlobalHeader from '../src/components/global-header';
 import Heading from '../src/blocks/heading';
 import Hero from '../src/components/hero';
+import Login from '../src/components/login';
 import Wrapper from '../src/blocks/wrapper';
 
 export default function Home() {
@@ -17,38 +19,41 @@ export default function Home() {
         <link rel="stylesheet" href="https://use.typekit.net/jvb4kyh.css" />
       </Head>
 
-      <main className="rhythm--page">
-        <Wrapper>
-          <Hero
-            src='/assets/hero.jpg'
-            srcMobile='/assets/hero-mobile.jpg'
-            heading="A Force for Good"
-            content="Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet."
-            cta="Learn More"
-          />
-        </Wrapper>
-        <Wrapper size="medium-large">
-          <FlexCta heading="Member Advantages">
-            <Card
-              icon='/assets/shirt.svg'
-              alt="Shirt"
-              heading="Merchandise"
-              content="Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      <main>
+        <GlobalHeader icon="/assets/voltage-logo.svg" />
+        <div className="rhythm--page">
+          <Wrapper>
+            <Hero
+              src='/assets/hero.jpg'
+              srcMobile='/assets/hero-mobile.jpg'
+              heading="A Force for Good"
+              content="Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet."
+              cta="Learn More"
             />
-            <Card
-              icon='/assets/support.svg'
-              alt="Support"
-              heading="Customer Support"
-              content="Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            />
-            <Card
-              icon='/assets/shield.svg'
-              alt="Security"
-              heading="Security"
-              content="Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            />
-          </FlexCta>
-        </Wrapper>
+          </Wrapper>
+          <Wrapper size="medium-large">
+            <FlexCta heading="Member Advantages">
+              <Card
+                icon='/assets/shirt.svg'
+                alt="Shirt"
+                heading="Merchandise"
+                content="Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+              />
+              <Card
+                icon='/assets/support.svg'
+                alt="Support"
+                heading="Customer Support"
+                content="Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+              />
+              <Card
+                icon='/assets/shield.svg'
+                alt="Security"
+                heading="Security"
+                content="Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+              />
+            </FlexCta>
+          </Wrapper>
+        </div>
       </main>
     </div>
   )

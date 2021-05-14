@@ -1,5 +1,6 @@
 export const Heading = (props) => {
   const {
+    className,
     element,
     children,
     ...rest
@@ -7,7 +8,8 @@ export const Heading = (props) => {
 
   const classStack = [
     'heading',
-    element && `heading--${element}`
+    element && `heading--${element}`,
+    className && className
   ].join(' ');
 
   return (
