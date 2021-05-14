@@ -1,0 +1,48 @@
+.flex-cta {
+  text-align: center;
+  margin-bottom: 6.25rem;
+  padding: 0 1rem;
+
+  & > .flex {
+    & > .button {
+      margin-top: 6.25rem;
+    }
+
+    & > .card {
+      margin-top: 2.375rem;
+
+      @media (--medium) {
+        margin-top: 4.25rem;
+      }
+    }
+  }
+
+  &__button {
+    margin-top: 2.375rem;
+    min-width: 10rem;
+
+    @media (--medium) {
+      margin-top: 6.25rem;
+      min-width: 12.5rem;
+    }
+  }
+
+  & > .flex > * {
+    display: inline-block;
+
+    @media (--medium) {
+      flex: 0;
+      margin-left: 14.875px;
+      margin-right: 14.875px;
+      min-width: 14.375rem;
+    }
+  }
+
+  & > .flex > .card:nth-child(3n - 2) {
+    margin-left: 0;
+  }
+
+  & > .flex > .card:nth-child(3n) { /* third child no gap */
+    margin-right: 0;
+  }
+}

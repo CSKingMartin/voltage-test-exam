@@ -1,0 +1,14 @@
+:root {
+  --color-red-1: #EC292A; /* heading, button */
+  --color-red-2: #EC322F; /* small heading */
+  --color-red-3: #EC3A33; /* member advantages */
+
+  /* grayscale */
+  --color-white: #fff;
+  --color-gray-1: #1e1e1e;
+  --color-gray-2: #282828;
+  --color-gray-3: #646464;
+  --color-gray-4: #d2d2d2;
+  --color-gray-5: #f2f2f2;
+  --color-black: #000;
+}

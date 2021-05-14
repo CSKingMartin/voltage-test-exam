@@ -1,0 +1,15 @@
+.rhythm {
+  &,
+  &--default { & > * + * { margin-top: 1rem; } }
+  &--small { & > * + * { margin-top: .5rem; } }
+  &--large { & > * + * { margin-top: 2rem; } }
+  &--page {
+    & > * + * {
+      margin-top: 1.875rem;
+
+      @media (--medium) {
+        margin-top: 7rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+/* Above-targt breakpoints */
+@custom-media --extra-small only screen and (min-width: 24rem);
+@custom-media --small only screen and (min-width: 32rem);
+@custom-media --medium-small only screen and (min-width: 40rem);
+@custom-media --medium only screen and (min-width: 48rem);
+@custom-media --medium-large only screen and (min-width: 56rem);
+@custom-media --large only screen and (min-width: 64rem);
+@custom-media --extra-large only screen and (min-width: 72rem);
+@custom-media --huge only screen and (min-width: 90rem); /* breakpoint of widest wrapper */
+
+/* Below-target breakpoints */
+@custom-media --below-extra-small only screen and (max-width: 24rem);
+@custom-media --below-small only screen and (max-width: 32rem);
+@custom-media --below-medium-small only screen and (max-width: 40rem);
+@custom-media --below-medium only screen and (max-width: 48rem);
+@custom-media --below-medium-large only screen and (max-width: 56rem);
+@custom-media --below-large only screen and (max-width: 64rem);
+@custom-media --below-extra-large only screen and (max-width: 72rem);
+@custom-media --below-huge only screen and (max-width: 90rem);

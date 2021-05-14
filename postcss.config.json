@@ -1,0 +1,13 @@
+{
+  "plugins": [
+    [
+      "postcss-preset-env",
+      {
+        "stage": 1,
+      }
+    ],
+    "postcss-easy-import",
+    "postcss-nested",
+    "postcss-custom-media"
+  ]
+}
